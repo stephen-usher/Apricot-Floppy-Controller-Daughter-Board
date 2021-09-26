@@ -1,0 +1,539 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface:WD2797 Socket-1
+U 1 1 60D71B71
+P 3950 3400
+F 0 "Socket-1" H 3960 3470 50  0000 C CNN
+F 1 "WD2797" H 3950 3290 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 4600 1750 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheets2/12/1229802_1.pdf" H 3950 4200 50  0001 C CNN
+	1    3950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface:WD2797 U1
+U 1 1 60D7358C
+P 8160 3400
+F 0 "U1" H 8160 3530 50  0000 C CNN
+F 1 "WD2797" H 8160 3260 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 8810 1750 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheets2/12/1229802_1.pdf" H 8160 4200 50  0001 C CNN
+	1    8160 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4013 U2
+U 1 1 60D779EA
+P 5410 2440
+F 0 "U2" H 5420 2490 50  0000 C CNN
+F 1 "4013" H 5410 2400 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5410 2440 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 5410 2440 50  0001 C CNN
+	1    5410 2440
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4013 U2
+U 3 1 60D7A318
+P 5440 1540
+F 0 "U2" V 5510 1540 50  0000 C CNN
+F 1 "4013" V 5330 1540 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5440 1540 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 5440 1540 50  0001 C CNN
+	3    5440 1540
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3450 2300 0    50   Input ~ 0
+CLK2M
+Text GLabel 3450 4400 0    50   Input ~ 0
+DRVRDY
+Text GLabel 5710 2540 2    50   Input ~ 0
+FEEDBCK
+Text GLabel 5110 2340 0    50   Input ~ 0
+FEEDBCK
+Text GLabel 5110 2440 0    50   Input ~ 0
+CLK2M
+Text GLabel 5710 2340 2    50   Input ~ 0
+CLK1M
+$Comp
+L power:GND #PWR0101
+U 1 1 60D89C24
+P 5840 1540
+F 0 "#PWR0101" H 5840 1290 50  0001 C CNN
+F 1 "GND" V 5845 1412 50  0000 R CNN
+F 2 "" H 5840 1540 50  0001 C CNN
+F 3 "" H 5840 1540 50  0001 C CNN
+	1    5840 1540
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 60D8A3E2
+P 5040 1540
+F 0 "#PWR0102" H 5040 1390 50  0001 C CNN
+F 1 "VCC" V 5055 1667 50  0000 L CNN
+F 2 "" H 5040 1540 50  0001 C CNN
+F 3 "" H 5040 1540 50  0001 C CNN
+	1    5040 1540
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7660 4400 0    50   Input ~ 0
+CTRLRDY
+Text GLabel 7660 2300 0    50   Input ~ 0
+CLK1M
+$Comp
+L power:VCC #PWR0105
+U 1 1 60D8CEEF
+P 8160 1600
+F 0 "#PWR0105" H 8160 1450 50  0001 C CNN
+F 1 "VCC" H 8175 1773 50  0000 C CNN
+F 2 "" H 8160 1600 50  0001 C CNN
+F 3 "" H 8160 1600 50  0001 C CNN
+	1    8160 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 60D8D96B
+P 8160 5100
+F 0 "#PWR0106" H 8160 4850 50  0001 C CNN
+F 1 "GND" H 8165 4927 50  0000 C CNN
+F 2 "" H 8160 5100 50  0001 C CNN
+F 3 "" H 8160 5100 50  0001 C CNN
+	1    8160 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 60D8DCE3
+P 3950 5100
+F 0 "#PWR0107" H 3950 4850 50  0001 C CNN
+F 1 "GND" H 3955 4927 50  0000 C CNN
+F 2 "" H 3950 5100 50  0001 C CNN
+F 3 "" H 3950 5100 50  0001 C CNN
+	1    3950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 60D8E145
+P 3950 1600
+F 0 "#PWR0108" H 3950 1450 50  0001 C CNN
+F 1 "VCC" H 3965 1773 50  0000 C CNN
+F 2 "" H 3950 1600 50  0001 C CNN
+F 3 "" H 3950 1600 50  0001 C CNN
+	1    3950 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 1800 0    50   Input ~ 0
+WE
+Text GLabel 3450 1900 0    50   Input ~ 0
+CS
+Text GLabel 3450 2000 0    50   Input ~ 0
+RE
+Text GLabel 3450 2100 0    50   Input ~ 0
+A0
+Text GLabel 3450 2200 0    50   Input ~ 0
+A1
+Text GLabel 3450 2400 0    50   Input ~ 0
+MR
+Text GLabel 3450 2600 0    50   Input ~ 0
+DAL0
+Text GLabel 3450 2700 0    50   Input ~ 0
+DAL1
+Text GLabel 3450 2800 0    50   Input ~ 0
+DAL2
+Text GLabel 3450 2900 0    50   Input ~ 0
+DAL3
+Text GLabel 3450 3000 0    50   Input ~ 0
+DAL4
+Text GLabel 3450 3100 0    50   Input ~ 0
+DAL5
+Text GLabel 3450 3200 0    50   Input ~ 0
+DAL6
+Text GLabel 3450 3300 0    50   Input ~ 0
+DAL7
+Text GLabel 3450 3500 0    50   Input ~ 0
+ENP
+Text GLabel 3450 3600 0    50   Input ~ 0
+RPW
+Text GLabel 3450 3700 0    50   Input ~ 0
+5-8
+Text GLabel 3450 3800 0    50   Input ~ 0
+TEST
+Text GLabel 3450 3900 0    50   Input ~ 0
+VCO
+Text GLabel 3450 4000 0    50   Input ~ 0
+WPW
+Text GLabel 3450 4100 0    50   Input ~ 0
+DDEN
+Text GLabel 3450 4300 0    50   Input ~ 0
+RAW_READ
+Text GLabel 3450 4500 0    50   Input ~ 0
+TR00
+Text GLabel 3450 4600 0    50   Input ~ 0
+IP
+Text GLabel 3450 4700 0    50   Input ~ 0
+WPRT
+Text GLabel 3450 4800 0    50   Input ~ 0
+HLT
+Text GLabel 4450 4900 2    50   Input ~ 0
+SSO
+Text GLabel 4450 4800 2    50   Input ~ 0
+PUMP
+Text GLabel 4450 4700 2    50   Input ~ 0
+HLD
+Text GLabel 4450 4600 2    50   Input ~ 0
+TG43
+Text GLabel 4450 4500 2    50   Input ~ 0
+WG
+Text GLabel 4450 4400 2    50   Input ~ 0
+WD
+Text GLabel 4450 4300 2    50   Input ~ 0
+DIRC
+Text GLabel 4450 4200 2    50   Input ~ 0
+STEP
+Text GLabel 4450 1800 2    50   Input ~ 0
+INTRQ
+Text GLabel 4450 1900 2    50   Input ~ 0
+DRQ
+Text GLabel 7660 1800 0    50   Input ~ 0
+WE
+Text GLabel 7660 1900 0    50   Input ~ 0
+CS
+Text GLabel 7660 2000 0    50   Input ~ 0
+RE
+Text GLabel 7660 2100 0    50   Input ~ 0
+A0
+Text GLabel 7660 2200 0    50   Input ~ 0
+A1
+Text GLabel 7660 2400 0    50   Input ~ 0
+MR
+Text GLabel 7660 2600 0    50   Input ~ 0
+DAL0
+Text GLabel 7660 2700 0    50   Input ~ 0
+DAL1
+Text GLabel 7660 2800 0    50   Input ~ 0
+DAL2
+Text GLabel 7660 2900 0    50   Input ~ 0
+DAL3
+Text GLabel 7660 3000 0    50   Input ~ 0
+DAL4
+Text GLabel 7660 3100 0    50   Input ~ 0
+DAL5
+Text GLabel 7660 3200 0    50   Input ~ 0
+DAL6
+Text GLabel 7660 3300 0    50   Input ~ 0
+DAL7
+Text GLabel 8660 1800 2    50   Input ~ 0
+INTRQ
+Text GLabel 8660 1900 2    50   Input ~ 0
+DRQ
+Text GLabel 7660 3500 0    50   Input ~ 0
+ENP
+Text GLabel 7660 3600 0    50   Input ~ 0
+RPW
+Text GLabel 7660 3700 0    50   Input ~ 0
+5-8
+Text GLabel 7660 3800 0    50   Input ~ 0
+TEST
+Text GLabel 7660 3900 0    50   Input ~ 0
+VCO
+Text GLabel 7660 4000 0    50   Input ~ 0
+WPW
+Text GLabel 7660 4100 0    50   Input ~ 0
+DDEN
+Text GLabel 7660 4300 0    50   Input ~ 0
+RAW_READ
+Text GLabel 7660 4500 0    50   Input ~ 0
+TR00
+Text GLabel 7660 4600 0    50   Input ~ 0
+IP
+Text GLabel 7660 4700 0    50   Input ~ 0
+WPRT
+Text GLabel 7660 4800 0    50   Input ~ 0
+HLT
+Text GLabel 8660 4300 2    50   Input ~ 0
+DIRC
+Text GLabel 8660 4400 2    50   Input ~ 0
+WD
+Text GLabel 8660 4500 2    50   Input ~ 0
+WG
+Text GLabel 8660 4600 2    50   Input ~ 0
+TG43
+Text GLabel 8660 4700 2    50   Input ~ 0
+HLD
+Text GLabel 8660 4800 2    50   Input ~ 0
+PUMP
+Text GLabel 8660 4900 2    50   Input ~ 0
+SSO
+$Comp
+L Device:C C1
+U 1 1 60DA11F6
+P 5440 1000
+F 0 "C1" V 5188 1000 50  0000 C CNN
+F 1 "1uF" V 5279 1000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5478 850 50  0001 C CNN
+F 3 "~" H 5440 1000 50  0001 C CNN
+	1    5440 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60DA2F44
+P 5520 3770
+F 0 "C3" V 5268 3770 50  0000 C CNN
+F 1 "1uF" V 5359 3770 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5558 3620 50  0001 C CNN
+F 3 "~" H 5520 3770 50  0001 C CNN
+	1    5520 3770
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60DA439C
+P 8160 1010
+F 0 "C2" V 7908 1010 50  0000 C CNN
+F 1 "1uF" V 7999 1010 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8198 860 50  0001 C CNN
+F 3 "~" H 8160 1010 50  0001 C CNN
+	1    8160 1010
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 60DA55BC
+P 5410 2140
+F 0 "#PWR0109" H 5410 1890 50  0001 C CNN
+F 1 "GND" H 5415 1967 50  0000 C CNN
+F 2 "" H 5410 2140 50  0001 C CNN
+F 3 "" H 5410 2140 50  0001 C CNN
+	1    5410 2140
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 60DA5C45
+P 5410 2740
+F 0 "#PWR0110" H 5410 2490 50  0001 C CNN
+F 1 "GND" H 5415 2567 50  0000 C CNN
+F 2 "" H 5410 2740 50  0001 C CNN
+F 3 "" H 5410 2740 50  0001 C CNN
+	1    5410 2740
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60DAF8C9
+P 5290 1000
+F 0 "#PWR0103" H 5290 750 50  0001 C CNN
+F 1 "GND" V 5295 872 50  0000 R CNN
+F 2 "" H 5290 1000 50  0001 C CNN
+F 3 "" H 5290 1000 50  0001 C CNN
+	1    5290 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 60DAFCD4
+P 5590 1000
+F 0 "#PWR0104" H 5590 850 50  0001 C CNN
+F 1 "VCC" V 5605 1128 50  0000 L CNN
+F 2 "" H 5590 1000 50  0001 C CNN
+F 3 "" H 5590 1000 50  0001 C CNN
+	1    5590 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 60DB0B4D
+P 8010 1010
+F 0 "#PWR0111" H 8010 760 50  0001 C CNN
+F 1 "GND" V 8015 882 50  0000 R CNN
+F 2 "" H 8010 1010 50  0001 C CNN
+F 3 "" H 8010 1010 50  0001 C CNN
+	1    8010 1010
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0112
+U 1 1 60DB10D2
+P 8310 1010
+F 0 "#PWR0112" H 8310 860 50  0001 C CNN
+F 1 "VCC" V 8325 1138 50  0000 L CNN
+F 2 "" H 8310 1010 50  0001 C CNN
+F 3 "" H 8310 1010 50  0001 C CNN
+	1    8310 1010
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 60DB22C9
+P 5370 3770
+F 0 "#PWR0113" H 5370 3520 50  0001 C CNN
+F 1 "GND" V 5375 3642 50  0000 R CNN
+F 2 "" H 5370 3770 50  0001 C CNN
+F 3 "" H 5370 3770 50  0001 C CNN
+	1    5370 3770
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0114
+U 1 1 60DB2BF0
+P 5670 3770
+F 0 "#PWR0114" H 5670 3620 50  0001 C CNN
+F 1 "VCC" V 5685 3898 50  0000 L CNN
+F 2 "" H 5670 3770 50  0001 C CNN
+F 3 "" H 5670 3770 50  0001 C CNN
+	1    5670 3770
+	0    1    1    0   
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85V-10PU U3
+U 1 1 60E6FED3
+P 5990 5180
+F 0 "U3" H 5460 5226 50  0000 R CNN
+F 1 "ATtiny85V-10PU" H 5460 5135 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5990 5180 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 5990 5180 50  0001 C CNN
+	1    5990 5180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 60E70D02
+P 5990 5780
+F 0 "#PWR0115" H 5990 5530 50  0001 C CNN
+F 1 "GND" H 5995 5607 50  0000 C CNN
+F 2 "" H 5990 5780 50  0001 C CNN
+F 3 "" H 5990 5780 50  0001 C CNN
+	1    5990 5780
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0116
+U 1 1 60E71ACF
+P 5990 4580
+F 0 "#PWR0116" H 5990 4430 50  0001 C CNN
+F 1 "VCC" H 6005 4753 50  0000 C CNN
+F 2 "" H 5990 4580 50  0001 C CNN
+F 3 "" H 5990 4580 50  0001 C CNN
+	1    5990 4580
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 60E73969
+P 6130 4120
+F 0 "J2" H 6238 4401 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 6238 4310 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6130 4120 50  0001 C CNN
+F 3 "~" H 6130 4120 50  0001 C CNN
+	1    6130 4120
+	1    0    0    -1  
+$EndComp
+Text GLabel 6330 4020 2    50   Input ~ 0
+_FLPMOTORON
+Text GLabel 6330 4120 2    50   Input ~ 0
+_FLPSELDRV0
+Text GLabel 6590 5180 2    50   Input ~ 0
+DRVRDY
+Text GLabel 6590 5280 2    50   Input ~ 0
+_FLPSELDRV0
+Text GLabel 6590 4880 2    50   Input ~ 0
+_FLPMOTORON
+Text GLabel 6590 5080 2    50   Input ~ 0
+CTRLRDY
+Text GLabel 6590 4980 2    50   Input ~ 0
+RSTSTEP
+Text GLabel 8660 4200 2    50   Input ~ 0
+CTRLSTEP
+$Comp
+L 74xx:74LS32 U4
+U 1 1 60E77877
+P 4020 6200
+F 0 "U4" H 4020 5883 50  0000 C CNN
+F 1 "74LS32" H 4020 5974 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4020 6200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4020 6200 50  0001 C CNN
+	1    4020 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74LS32 U4
+U 5 1 60E81957
+P 5370 6530
+F 0 "U4" V 5003 6530 50  0000 C CNN
+F 1 "74LS32" V 5094 6530 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5370 6530 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5370 6530 50  0001 C CNN
+	5    5370 6530
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 60E8842B
+P 4870 6530
+F 0 "#PWR0117" H 4870 6280 50  0001 C CNN
+F 1 "GND" V 4875 6402 50  0000 R CNN
+F 2 "" H 4870 6530 50  0001 C CNN
+F 3 "" H 4870 6530 50  0001 C CNN
+	1    4870 6530
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0118
+U 1 1 60E88E1B
+P 5870 6530
+F 0 "#PWR0118" H 5870 6380 50  0001 C CNN
+F 1 "VCC" V 5885 6658 50  0000 L CNN
+F 2 "" H 5870 6530 50  0001 C CNN
+F 3 "" H 5870 6530 50  0001 C CNN
+	1    5870 6530
+	0    1    1    0   
+$EndComp
+Text GLabel 4320 6100 2    50   Input ~ 0
+RSTSTEP
+Text GLabel 4320 6300 2    50   Input ~ 0
+CTRLSTEP
+Text GLabel 3720 6200 0    50   Input ~ 0
+STEP
+$Comp
+L Device:R R1
+U 1 1 60E8FA7A
+P 5930 3230
+F 0 "R1" V 5723 3230 50  0000 C CNN
+F 1 "220" V 5814 3230 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5860 3230 50  0001 C CNN
+F 3 "~" H 5930 3230 50  0001 C CNN
+	1    5930 3230
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 60E90B2F
+P 5780 3230
+F 0 "#PWR0119" H 5780 2980 50  0001 C CNN
+F 1 "GND" V 5785 3102 50  0000 R CNN
+F 2 "" H 5780 3230 50  0001 C CNN
+F 3 "" H 5780 3230 50  0001 C CNN
+	1    5780 3230
+	0    1    1    0   
+$EndComp
+Text GLabel 6080 3230 2    50   Input ~ 0
+5-8
+$EndSCHEMATC
